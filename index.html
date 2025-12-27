@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>文字与图片展示</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "微软雅黑", sans-serif;
+      background-color: #ffffff;
+      color: #000;
+    }
+
+    /* 顶部漂浮文字 */
+    .top-text {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #ffffff;
+      padding: 20px;
+      font-size: 18px;
+      line-height: 1.8;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    /* 给图片留出顶部空间 */
+    .content {
+      padding-top: 140px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .content img {
+      width: 100%;
+      display: block;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="top-text">
+    藤丸立香，迄今为止的旅程你开心吗？
+  </div>
+
+  <div class="content">
+    <img src="img1.jpg" alt="图片1">
+    <img src="img2.jpg" alt="图片2">
+    <img src="img3.jpg" alt="图片3">
+    <img src="img4.jpg" alt="图片4">
+    <img src="img5.jpg" alt="图片5">
+    <img src="img6.jpg" alt="图片6">
+  </div>
+
+</body>
+</html>
